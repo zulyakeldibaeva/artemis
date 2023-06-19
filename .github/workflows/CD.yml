@@ -66,14 +66,11 @@ jobs:
       - name: Run a one-line script
         run: gcloud version 
 
-
-
-      - name: Authenticate to Google account
-        run: |
-          gcloud auth activate-service-account --key-file="service-account.json"
-          gcloud config set project ${{ env.project_id }}
-
-
+      - id: 'auth'
+        name: 'Authenticate to Google Cloud'
+        uses: 'google-github-actions/auth@v0'
+        with:
+          credentials_json: '${{ secrets.SERVICE_ACCOUNT }}'
 
       - name: Authenticate to repository
         run: |
