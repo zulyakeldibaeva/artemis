@@ -19,6 +19,6 @@ ingress:
         - path: /
           pathType: ImplementationSpecific
   tls: 
-    - secretName: artemis-dev-tls
+    - secretName: nodejs-dev-tls
       hosts:
        - dev.zulyakeldibaeva.com

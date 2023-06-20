@@ -19,6 +19,6 @@ ingress:
         - path: /
           pathType: ImplementationSpecific
   tls: 
-    - secretName: artemis-prod-tls
+    - secretName: nodejs-prod-tls
       hosts:
        - prod.zulyakeldibaeva.com
