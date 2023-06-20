@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: us-central1-docker.pkg.dev/terraform-zulfia-project/artemis/artemis
+  repository: s-central1-docker.pkg.dev/terraform-zulfia-project/nodejs/nodejs
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: "2.0.0"
